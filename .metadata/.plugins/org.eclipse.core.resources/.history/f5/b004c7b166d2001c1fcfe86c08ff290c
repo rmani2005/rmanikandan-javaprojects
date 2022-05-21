@@ -1,0 +1,19 @@
+package pdfValidation;
+
+import java.io.IOException;
+
+import com.testautomationguru.utility.PDFUtil;
+
+public class pdfMaster {
+
+	public static void main(String[] args) throws IOException 
+	{
+		// TODO Auto-generated method stub
+
+		PDFUtil pdfUtil = new PDFUtil();
+		pdfUtil.getPageCount("c:/sample.pdf"); //returns the page count
+		
+		
+	}
+
+}
