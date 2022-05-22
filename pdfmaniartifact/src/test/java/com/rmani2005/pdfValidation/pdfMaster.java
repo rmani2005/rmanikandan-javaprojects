@@ -52,11 +52,14 @@ public class pdfMaster {
 	public void firstPDFTest()throws IOException 
 	{
 		// TODO Auto-generated method stub
-		String currentPath = "";
-		String filePath = "/home/rocky/Desktop/DevOps/java-basic-project/MasterMani/pdfFile/Source/source.pdf";
-		String targetfilePath = "/home/rocky/Desktop/DevOps/java-basic-project/MasterMani/pdfFile/target/target.pdf";
 		
-		String ComparefilePath = "/home/rocky/Desktop/DevOps/java-basic-project/MasterMani/pdfFile/compareResult";
+		String currentDir = System.getProperty("user.dir");
+		System.out.println("Current dir using System:" + currentDir);
+		 
+		String filePath = currentDir+"/pdfFile/Source/source.pdf";
+		String targetfilePath = currentDir+"/pdfFile/target/target.pdf";
+		
+		String ComparefilePath = currentDir+"/pdfFile/compareResult";
 		
 		PDFUtil pdfUtil = new PDFUtil();
 		int pageCount = pdfUtil.getPageCount(filePath); //returns the page count
