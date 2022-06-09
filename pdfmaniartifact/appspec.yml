@@ -1,1 +1,5 @@
-ss
+version: 0.0
+os: linux
+files:
+  - source: ./pdfmaniartifact-0.0.1-SNAPSHOT.jar
+    destination: /tmp
